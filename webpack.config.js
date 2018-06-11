@@ -10,7 +10,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist/js'),
     publicPath: '/dist/',
-    filename: 'TreeTable.js'
+    filename: 'TreeTable.js',
+    library: 'TreeTable',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     rules: [
@@ -38,13 +41,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader', 
         exclude: /node_modules/
-      }, 
-      // {
-      //   test: /\.js$/,
-      //   loader: 'babel-loader',
-      //   exclude: /node_modules/,
-      //   include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client'), resolve('/node_modules/iview/src'), resolve('/node_modules/iview/packages')]
-      // },
+      },
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',

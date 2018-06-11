@@ -3,7 +3,7 @@
 
 import vueTreeTable from './tree-table.vue'
 
-const TreeTable = {
+const vTreeTable = {
   install: function (Vue) {
     Vue.component('TreeTable', vueTreeTable)
   }
@@ -11,7 +11,7 @@ const TreeTable = {
 
 // 这里的判断很重要
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(TreeTable)
+  window.Vue.use(vTreeTable)
 }
 
-export default TreeTable
+export default vTreeTable

@@ -1,7 +1,7 @@
 {
   "name": "speed4j-createtable",
   "description": "A Vue.js project",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "yangky <2855463881@qq.com>",
   "license": "MIT",
   "private": false,
@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "element-resize-detector": "^1.1.14",
-    "iview": "^2.14.1",
-    "vue": "^2.5.11"
+    "iview": "^2.11.0",
+    "vue": "^2.5.2"
   },
   "files": [
     "dist",
